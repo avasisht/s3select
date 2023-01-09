@@ -5,8 +5,8 @@ session = boto3.Session(profile_name='abhi')
 s3 = session.client('s3')
 
 # Set the name of the bucket and object to retrieve
-bucket = 'awss3selectexample'
-key = 'Top1000IMDBmovies.csv'
+bucket = 'my-bucket'
+key = 'my-dataset.csv'
 
 # Set the SQL expression to use for processing the object
 expression = "SELECT MovieName FROM s3object s WHERE s.MovieRating > '9.0'"
